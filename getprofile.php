@@ -22,7 +22,7 @@ while($row=mysqli_fetch_array($responce)){
 	$index['address']=$row['2'];
 	$index['mobile']=$row['3'];
 	$index['email']=$row['4'];
-	$index['password']=$row['5'];
+	
 
 	array_push($result['data'], $index);
 }
