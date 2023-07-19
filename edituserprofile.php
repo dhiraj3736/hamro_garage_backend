@@ -2,8 +2,9 @@
  include('conn.php');
     include('validate.php');
 
-if (isset($_POST['fullname'])&&isset($_POST['address'])&&isset($_POST['mobile'])&&isset($_POST['email']))  {
 
+if (isset($_POST['fullname'])&&isset($_POST['address'])&&isset($_POST['mobile'])&&isset($_POST['email']))  {
+  
 
     $fullname = $_POST['fullname'];
      $address = $_POST['address'];
