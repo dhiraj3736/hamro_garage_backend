@@ -1,5 +1,5 @@
 <?php
-if (isset($_POST['garage_name'])&& isset($_POST['available_time'])&& isset($_POST['mobile'])&& isset($_POST['service'])&& isset($_POST['location'])&& isset($_POST['u_id']))  {
+if (isset($_POST['garage_name'])&& isset($_POST['available_time'])&& isset($_POST['mobile'])&& isset($_POST['service'])&& isset($_POST['location'])&& isset($_POST['status'])&& isset($_POST['u_id']))  {
    include 'conn.php';
     include 'validate.php';
 
@@ -8,6 +8,7 @@ if (isset($_POST['garage_name'])&& isset($_POST['available_time'])&& isset($_POS
     $mobile = validate($_POST['mobile']);
     $service = validate($_POST['service']);
     $location = validate($_POST['location']);
+    $status = validate($_POST['status']);
      $u_id=$_POST['u_id'];
 
 
