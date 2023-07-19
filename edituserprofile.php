@@ -1,34 +1,25 @@
 <?php
-include 'conn.php';
-    include 'validate.php';
-   
+ include('conn.php');
+    include('validate.php');
 
-if (isset($_POST['u_id'])) {
-	$userid=$_POST['u_id'];
-	# code...
+if (isset($_POST['fullname'])&&isset($_POST['address'])&&isset($_POST['mobile'])&&isset($_POST['email']))  {
+  
+
+    $fullname = $_POST['fullname'];
+     $address = $_POST['address'];
+      $mobile = $_POST['mobile'];
+       $email = $_POST['email'];
+
+   if (isset($_POST['u_id'])) {
+  $userid=$_POST['u_id'];
+
 }
- // where u_id='$userid'
+    $sql = "UPDATE user_signup SET fullname='$fullname',address='$address' ,mobile='$mobile', email='$email' WHERE id='$userid'";
 
-
-$result=array();
-$result['data']=array();
-
-
-$select= "SELECT * from user_signup where id='$userid'"; 
-$responce= mysqli_query($conn,$select);
-
-while($row=mysqli_fetch_array($responce)){
-	$index['fullname']=$row['1'];
-	$index['address']=$row['2'];
-	$index['mobile']=$row['3'];
-	$index['email']=$row['4'];
-	
-
-	array_push($result['data'], $index);
+    if (!$conn->query($sql)) {
+        echo "failure";
+    } else {
+        echo "success";
+    }
 }
-$result["success"]="1";
-echo json_encode($result);
-
-
-
 ?>
