@@ -2,6 +2,7 @@
  include('conn.php');
     include('validate.php');
 
+
 if (isset($_POST['fullname'])&&isset($_POST['address'])&&isset($_POST['mobile'])&&isset($_POST['email']))  {
   
 
