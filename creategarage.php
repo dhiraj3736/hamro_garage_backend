@@ -17,12 +17,22 @@ if (isset($_POST['garage_name']) && isset($_POST['available_time']) && isset($_P
     $row = $result->fetch_assoc();
     $garage_count = $row['count'];
 
+<<<<<<< HEAD
     if ($garage_count > 0) {
+=======
+    if ($garage_count > 1) {
+>>>>>>> 038627107374edaa65120e7e5cf49b201536057b
         // Garage with the given s_id already exists
         echo "Already registered";
     } else {
         // Insert the garage information into the database
+<<<<<<< HEAD
         $sql = "INSERT INTO garage_info (garage_name, available_time, mobile, service, location, status, s_id) VALUES ('$garage_name', '$available_time', '$mobile', '$service', '$location', '$status', '$u_id')";
+=======
+        // $sql = "INSERT INTO garage_info (garage_name, available_time, mobile, service, location, status) VALUES ('$garage_name', '$available_time', '$mobile',  '$status') WHERE s_id = '$u_id'";
+
+        $sql = "UPDATE garage_info SET garage_name='$garage_name',available_time='$available_time' ,mobile='$mobile', service='$service',location='$location', status='$status' WHERE s_id='$u_id'";
+>>>>>>> 038627107374edaa65120e7e5cf49b201536057b
 
         if ($conn->query($sql)) {
             echo "success";
@@ -31,4 +41,8 @@ if (isset($_POST['garage_name']) && isset($_POST['available_time']) && isset($_P
         }
     }
 }
+<<<<<<< HEAD
 ?>
+=======
+?>
+>>>>>>> 038627107374edaa65120e7e5cf49b201536057b
