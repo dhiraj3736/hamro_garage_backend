@@ -24,8 +24,8 @@ while($row=mysqli_fetch_array($responce)){
 	$index['mobile']=$row['3'];
 	$index['service']=$row['4'];
 	$index['location']=$row['5'];
-	$index['status']=$row['6'];
-
+	$index['status']=$row['8'];
+	
 
 	array_push($result['data'], $index);
 }
