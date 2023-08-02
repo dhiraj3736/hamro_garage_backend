@@ -16,6 +16,7 @@ if (isset($_POST['latitude']) && isset($_POST['longitude'])) {
     $responce= mysqli_query($conn,$select);
 
     while($row=mysqli_fetch_array($responce)){
+        $index['id']=$row['0'];
         $index['garage_name']=$row['1'];
         $index['mobile']=$row['3'];
         $index['service']=$row['4'];
