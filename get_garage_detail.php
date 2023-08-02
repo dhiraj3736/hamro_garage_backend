@@ -15,7 +15,7 @@ $result=array();
 $result['data']=array();
 
 
-$select= "SELECT * from garage_info where s_id='$userid'and status='$status'"; 
+$select= "SELECT * from garage_info where s_id='$userid'and status='$status'";
 $responce= mysqli_query($conn,$select);
 
 while($row=mysqli_fetch_array($responce)){
