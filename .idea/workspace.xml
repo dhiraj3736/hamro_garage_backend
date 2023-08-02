@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c96d0658-98d9-4547-b7d1-4401f4241d2e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/hamro_garage_backend/v17/.wsuo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/hamro_garage_backend/v17/.wsuo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/slnx.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/get_garage_detail_activity.php" beforeDir="false" afterPath="$PROJECT_DIR$/get_garage_detail_activity.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,6 +60,9 @@
       <workItem from="1690869493580" duration="6000" />
       <workItem from="1690885039555" duration="2045000" />
       <workItem from="1690900428336" duration="1528000" />
+      <workItem from="1690946380599" duration="1631000" />
+      <workItem from="1690950230066" duration="3945000" />
+      <workItem from="1690959595122" duration="6909000" />
     </task>
     <servers />
   </component>
